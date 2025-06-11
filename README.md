@@ -4,7 +4,6 @@
 
 개발기간: 5개월
 
-패키지 매니저: pnpm
 
 # 기술 스택 
 
@@ -24,6 +23,9 @@
 ### **코드 품질 관리**
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black) 
+
+### **패키지 매니저**
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white)
 
 
 # 프로젝트 목표
