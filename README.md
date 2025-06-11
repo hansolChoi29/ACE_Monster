@@ -223,8 +223,8 @@ chmod +x .husky/pre-commit
 ````
 3) 에러 나는 코드 일부러 써보기
 ````
-var hello = 1; // ❌ var 사용금지
-function App() { return <div>hi</div>; } // ❌ 함수선언식 금지
+var hello = 1; // var 사용금지
+function App() { return <div>hi</div>; } // 함수선언식 금지
 ````
 
 4) 커밋 시도해보기
