@@ -15,6 +15,7 @@ const LoadingPage = () => {
             opacity-20
           "
         />
+        {/* test */}
       </div>
     </div>
   );
