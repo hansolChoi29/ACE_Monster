@@ -187,13 +187,13 @@ pnpm run dev`
 
 <p><a href="https://winwin0219.tistory.com/entry/ACEMonster-ReacttailwindCSS" target="_blank">React+Vite+pnpm 환경에서 Tailwind CSS 설치·설정 이슈</a></p>
 
-
 ---
 
 # 커밋 전에 자동으로 코드 검사하게 만든 이유
-###### "ACE. 너 이거 왜 했는지 까먹었지?"
-그래서 적어둔다. 
 
+###### "ACE. 너 이거 왜 했는지 까먹었지?"
+
+그래서 적어둔다.
 
 - 커밋할 때마다 ESLint + Prettier 검사 자동으로 실행됨
 - 코드 스타일 틀리면 커밋 안 됨 (에러) ← 이게 정상
@@ -204,42 +204,47 @@ pnpm run dev`
 - lint-staged: 수정한 파일만 검사해줌
 - eslint: 코드 규칙 위반 잡아냄 (예: var 쓰지 마, function 선언 쓰지 마)
 - prettier: 코드 포맷 틀리면 커밋 막음
+
 ---
 
- 커밋 전 검사 어떻게 작동하는지 테스트하려면?
-1) .husky/pre-commit 안에 이거 들어있는지 확인
+커밋 전 검사 어떻게 작동하는지 테스트하려면?
 
-````
+1. .husky/pre-commit 안에 이거 들어있는지 확인
+
+```
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
 pnpm lint-staged
-````
+```
 
-2) 실행 권한 부여 (윈도우, 무조건 한 번은 해야 함)
-````
+2. 실행 권한 부여 (윈도우, 무조건 한 번은 해야 함)
+
+```
 chmod +x .husky/pre-commit
-````
-3) 에러 나는 코드 일부러 써보기
-````
+```
+
+3. 에러 나는 코드 일부러 써보기
+
+```
 var hello = 1; // var 사용금지
 function App() { return <div>hi</div>; } // 함수선언식 금지
-````
+```
 
-4) 커밋 시도해보기
+4. 커밋 시도해보기
 
-````
+```
 git add .
 git commit -m "eslint 체크"
-````
+```
 
 → 에러 뜨면서 커밋 안 되는 게 정상.
 안 뜨면 husky 안 걸린 거니까 위 1~2번 다시 체크!
 
- prettier 에러 해결하고 싶을 때
-````
+prettier 에러 해결하고 싶을 때
+
+```
 pnpm prettier --write .
-````
+```
+
 → 포맷 자동으로 맞춰줌 (그다음 커밋하면 됨)
-
-
