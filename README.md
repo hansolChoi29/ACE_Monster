@@ -186,7 +186,7 @@ pnpm run dev`
 
 # 트러블슈팅
 
-
+<p><strong>ReacttailwindCSS</strong> <a href="https://winwin0219.tistory.com/entry/ACEMonster-ReacttailwindCSS" target="_blank">ReacttailwindCSS</a></p>
 
 
 ---
