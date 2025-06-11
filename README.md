@@ -37,6 +37,7 @@
 
 - AI 피드백: 사용자가 답변을 입력하면, AI가 그 답변을 분석하고 피드백을 제공할 수 있는 기능을 추가합니다.
 
+
 # 기능
 - 질문 카테고리: 미리보기 형태로 다양한 카테고리별 질문을 제공하고, 사용자가 선택하여 챗봇과 인터뷰를 진행합니다.
 
@@ -50,4 +51,38 @@
 `git clone https://github.com/yourusername/ACE_Monster.git`
 
 2. pnpm 설치
-(pnpm이 설치되지 않았다면 아래 명령어로 설팅
+(pnpm이 설치되지 않았다면 아래 명령어로 설치)
+
+
+`npm install -g pnpm`
+
+3. 프론트엔드 실행
+
+
+`cd frontend
+pnpm install
+pnpm run dev`
+
+4. 백엔드 실행
+
+`cd backend
+./mvnw spring-boot:run`
+
+5. ESLint와 Prettier 설정
+코드 품질을 관리하기 위해 ESLint와 Prettier를 사용합니다. 아래 명령어를 실행하여 필요한 패키지를 설치하세요.
+
+`
+pnpm add eslint prettier eslint-plugin-react eslint-plugin-import eslint-config-prettier eslint-plugin-prettier -D
+`
+
+6. 향후 계획
+
+- 사용자 인증 추가: Spring Security를 활용하여 로그인 기능 및 사용자 맞춤형 경험을 제공할 예정입니다.
+
+- 다양한 AI 피드백: 현재는 기본적인 답변을 제공하지만, 점차 피드백과 맞춤형 추천 시스템을 추가하여 더욱 인터랙티브한 경험을 제공합니다.
+
+
+# 트러블슈팅 
+
+
+
