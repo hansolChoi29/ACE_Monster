@@ -45,6 +45,110 @@
 
 - 대화형 UI: Framer Motion을 사용하여 애니메이션을 적용, 인터랙티브한 대화 흐름을 구현합니다.
 
+
+# 개발 규칙
+이 프로젝트는 1인 개발이지만, 장기 프로젝트로 잊지 않기 위한 개인 코드 규칙을 명확히 정리합니다.
+스프링 학습 이후 본격 개발 시 준수할 기준입니다.
+
+1. 함수 선언 방식
+
+````
+//  권장 (화살표 함수 방식)
+const ExampleComponent = () => {
+  return <div>Hello</div>;
+};
+
+//  금지 (전통 함수 선언식)
+function ExampleComponent() {
+  return <div>Hello</div>;
+}
+````
+
+ 2. 비교 연산자
+````
+//  권장
+if (a === 0) {
+  console.log("a는 0입니다.");
+}
+
+// 금지
+if (a == 0) {
+  console.log("a는 0입니다.");
+}
+````
+
+3. 변수 및 상수 명명 규칙
+
+상수 (const)는 대문자 + 스네이크 케이스 사용
+````
+//  권장
+const MAX_RETRY_COUNT = 5;
+
+//  금지
+const maxRetryCount = 5;
+
+````
+
+ 일반 변수는 카멜 케이스 사용
+
+````
+// 권장
+let userName = "Hansol";
+
+// 금지
+let User_Name = "Hansol";
+
+````
+
+4. 파일 이름 규칙
+
+````
+// 권장
+user-profile.tsx
+chat-box.ts
+
+// 금지
+UserProfile.tsx
+user_profile.tsx
+
+````
+
+
+5. 코드 라인 길이 제한
+- 한 줄은 80~120자 이하로 제한
+- 긴 JSX 속성, 긴 URL 등은 적절히 줄바꿈 처리
+
+````
+// 권장 (줄바꿈 활용)
+<Image
+  src="https://example.com/very-long-path/image.png"
+  alt="example"
+  width={200}
+  height={200}
+/>
+
+````
+
+6. 변수 선언 키워드
+
+const: 재할당이 불필요한 경우에만 사용
+
+let: 재할당이 필요한 경우에만 사용
+
+var: 절대 사용하지 않음
+
+````
+// 권장
+const appName = "ACE_Monster";
+let retryCount = 0;
+
+// 금지
+var appName = "ACE_Monster";
+
+````
+
+
+
 # 설치 및 실행 방법
 1. 리포지토리 클론
 
