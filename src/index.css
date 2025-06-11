@@ -29,3 +29,10 @@
     typing 2s steps(10, end) infinite,
     blinkCaret 0.75s step-end infinite;
 }
+@layer base {
+  html,
+  body,
+  #root {
+    @apply bg-black text-white;
+  }
+}
