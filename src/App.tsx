@@ -1,7 +1,6 @@
-import "./App.css";
+import './App.css';
 
-function App() {
-  return <div className="text-2xl">ACE_Monster</div>;
-}
-
+const App = () => {
+  return <div>테스트용</div>;
+};
 export default App;
