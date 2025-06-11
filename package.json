@@ -37,8 +37,8 @@
     "vite": "^6.3.5"
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx}": [
-      "eslint",
+    "**/*.{js,ts,tsx,jsx}": [
+      "eslint --max-warnings=0",
       "prettier --check"
     ]
   }
