@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <>ACE_Monster</>;
+  return <div className="text-2xl">ACE_Monster</div>;
 }
 
 export default App;
